@@ -1,6 +1,6 @@
 version: "3"
 services:
-  www:
+  convertsound:
     image: nginx
     restart: always
     expose:
