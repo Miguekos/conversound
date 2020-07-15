@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Lame.js Upload Example</title>
+    <title>Convert Sound Acceso</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 </head>
@@ -12,7 +12,7 @@
             <form method="post" enctype="multipart/form-data" action="" class="form-horizontal" id="inputForm">
                 <div class="control-group">
                     <label class="control-label col-sm-4">
-                        Select Wave File
+                        Selecciona el audio
                     </label>
 
                     <div class="col-sm-3">
@@ -42,7 +42,7 @@
 
                     <div class="col-sm-2">
                         <button class="btn btn-primary">
-                            Convert File
+                            Convertir
                         </button>
                     </div>
                 </div>
@@ -69,14 +69,14 @@
         $('#audioReceiver').on('change', function () {
             file = this.files[0];
             $('#StatusMessage').html(
-                    "File Size in bytes: " + file.size
+                    "Archivo pesa en bytes: " + file.size
             ).show();
         });
 
         $('#inputForm').on('submit', function (e) {
             e.preventDefault();
             if (!file || file.size < 1) {
-                alert('Specified file is not valid');
+                alert('Archivo no valido');
                 return;
             }
 
